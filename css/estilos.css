@@ -98,10 +98,6 @@ body {
     body .bloque__video {
       margin-top: 10px;
       border-radius: 5%; }
-      body .bloque__video--modificador:hover {
-        animation-name: rotate;
-        animation-duration: 1.6s;
-        animation-iteration-count: 1; }
   body .grilla {
     display: grid;
     grid-template-columns: 25% 45% 30%;
@@ -127,10 +123,7 @@ body {
     padding-top: 10px; }
     body .newells__img {
       width: 85%;
-      height: 600px;
       padding: 5px; }
-      body .newells__img--modificador {
-        height: 750px; }
   body .footer {
     display: flex;
     align-items: baseline;
@@ -159,6 +152,10 @@ body {
       justify-content: flex-end;
       padding: 1%;
       height: 140px; }
+    body .bloque, body .newells {
+      width: 100%; }
+      body .bloque__video {
+        width: 90%; }
     body .contenido__texto {
       font-size: 20px;
       width: 96%;
@@ -170,6 +167,15 @@ body {
       margin-top: -10px; }
     body .footer {
       text-align: center; }
+    body .formContacto {
+      display: block;
+      width: 90%;
+      margin-left: 23px; }
+      body .formContacto__mapa {
+        margin-top: 10px;
+        width: 100%; }
+      body .formContacto label {
+        font-size: 17px; }
     body h3 {
       font-style: italic;
       font-family: serif;
@@ -236,9 +242,3 @@ body {
   100% {
     color: black;
     transform: skew(45deg); } }
-
-@keyframes rotate {
-  0% {
-    transform: rotate(0deg); }
-  100% {
-    transform: rotate(360deg); } }
