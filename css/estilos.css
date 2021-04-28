@@ -1,0 +1,244 @@
+/*HEADER*/
+header {
+  grid-area: header;
+  background-image: url(../Imagenes/banner2.jpg);
+  background-size: contain;
+  background-repeat: no-repeat; }
+  header .lista__item {
+    list-style-type: none; }
+  header .lista__subitem {
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none; }
+
+/*BODY*/
+body {
+  margin: 0;
+  background-image: linear-gradient(60deg, red 26%, black 50%);
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  /*SECTION*/
+  /*FOOTER*/
+  /* MEDIA-QUERIES */ }
+  body section {
+    text-align: center;
+    width: 100%;
+    height: 100%; }
+  body h1 {
+    font-family: 'Playfair Display';
+    font-size: 40px;
+    color: #fc3142;
+    animation-name: estiloTitulo;
+    animation-duration: 1.7s;
+    animation-iteration-count: 2; }
+  body p {
+    color: #d8d4d4;
+    text-align: justify;
+    margin: 1%; }
+  body td {
+    border: 1px solid #a13838; }
+  body form {
+    border: 2px red solid;
+    border-radius: 2%;
+    padding: 10px;
+    text-align: justify; }
+    body form label {
+      color: cornsilk;
+      text-align: start;
+      font-size: 18px;
+      font-style: italic; }
+  body .formContacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px; }
+    body .formContacto__mapa {
+      border-radius: 5%;
+      padding-left: 8px;
+      height: 465px;
+      width: 400px; }
+  body .contenido__titulo {
+    text-align: center;
+    font-family: 'Playfair Display';
+    font-weight: 600;
+    padding-top: 30px; }
+  body .contenido__subtitulo {
+    font-family: 'Playfair Display';
+    font-size: 27px;
+    color: burlywood;
+    text-align: justify;
+    text-decoration: underline;
+    margin-top: 3%;
+    font-weight: 400; }
+  body .contenido__texto {
+    font-size: 24px;
+    font-family: 'Source Serif Pro';
+    line-height: 1.3;
+    color: white;
+    width: 10%; }
+  body .boton {
+    width: 100%;
+    text-align: end;
+    margin-top: 7px; }
+  body .bloque, body .newells {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    body .bloque__titulo {
+      text-align: center;
+      font-family: 'Times New Roman', Times, serif;
+      font-weight: 600;
+      padding-top: 30px; }
+    body .bloque__img {
+      height: 427px;
+      width: 640px;
+      margin-right: 1px;
+      padding: 2px;
+      border-radius: 1%; }
+    body .bloque__video {
+      margin-top: 10px;
+      border-radius: 5%; }
+      body .bloque__video--modificador:hover {
+        animation-name: rotate;
+        animation-duration: 1.6s;
+        animation-iteration-count: 1; }
+  body .grilla {
+    display: grid;
+    grid-template-columns: 25% 45% 30%;
+    grid-template-rows: 33.8vh 14vh 42.2vh 10vh;
+    grid-template-areas: "header header header" "titulo titulo titulo" "tabla tabla tabla"                      "footer footer footer"; }
+    body .grilla .tituloLogros {
+      font-weight: 600;
+      grid-area: titulo;
+      grid-column-start: 2;
+      margin-left: 230px;
+      padding-top: 40px; }
+    body .grilla .tablaInfo {
+      grid-area: tabla;
+      align-items: center;
+      grid-column-start: 2; }
+    body .grilla .tabla__head {
+      color: #c5bfbf;
+      text-decoration: underline;
+      font-style: italic; }
+    body .grilla .tabla__datos {
+      color: #f0e6e6; }
+  body .newells {
+    padding-top: 10px; }
+    body .newells__img {
+      width: 85%;
+      height: 600px;
+      padding: 5px; }
+      body .newells__img--modificador {
+        height: 750px; }
+  body .footer {
+    display: flex;
+    align-items: baseline;
+    justify-content: center; }
+    body .footer__texto {
+      color: white; }
+    body .footer__item {
+      font-size: 25px;
+      color: white; }
+    body .footer i {
+      padding: 10px; }
+  body footer {
+    grid-area: footer;
+    background-color: black;
+    margin-top: 40px;
+    height: 60px; }
+    body footer .footerGeneral {
+      color: white;
+      text-align: center;
+      font-size: 17px; }
+    body footer .footDos {
+      margin-top: 5px; }
+  @media only screen and (max-width: 600px) {
+    body .logo {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1%;
+      height: 140px; }
+    body .contenido__texto {
+      font-size: 20px;
+      width: 96%;
+      margin: 1%;
+      font-family: Helvetica, sans-serif; }
+    body .contenido__titulo {
+      text-align: center;
+      font-size: 35px;
+      margin-top: -10px; }
+    body .footer {
+      text-align: center; }
+    body h3 {
+      font-style: italic;
+      font-family: serif;
+      color: burlywood;
+      margin: 5px;
+      font-size: 14px; }
+    body header {
+      background-size: 420px 140px; } }
+  @media only screen and (min-width: 600px) {
+    body .contenido__titulo {
+      font-size: 34px; }
+    body .navbar-nav {
+      justify-content: space-around;
+      width: 100%; }
+    body .contenido__texto {
+      width: 96%; }
+    body .contenido__subtitulo {
+      color: burlywood;
+      font-family: 'Times New Roman', Times, serif;
+      font-size: 25px;
+      font-weight: 400;
+      margin-left: 1%; }
+    body .contenido__titulo {
+      text-align: center;
+      font-size: 40px; }
+    body .logo {
+      display: flex;
+      justify-content: flex-end;
+      padding: 1%;
+      margin-right: 2%;
+      height: 200px; }
+    body header {
+      background-size: 100vw 31vh; } }
+  @media only screen and (max-width: 1200px) {
+    body li {
+      font-size: 20px; } }
+  @media only screen and (min-width: 1200px) {
+    body .contenido__texto {
+      font-size: 26px;
+      font-family: 'Source Serif Pro';
+      line-height: 1.3;
+      color: white;
+      width: 97%; }
+    body .footerGeneral {
+      text-align: center; }
+    body .contenido__titulo {
+      font-size: 40px; }
+    body .logo {
+      display: flex;
+      justify-content: flex-end;
+      padding: 0.4%; }
+    body .contenido__subtitulo {
+      padding-top: 10px;
+      margin: 1%;
+      font-size: 27px; }
+    body header {
+      background-size: contain;
+      background-repeat: no-repeat; } }
+
+@keyframes estiloTitulo {
+  0% {
+    color: #fc3142;
+    transform: translateX(100px); }
+  100% {
+    color: black;
+    transform: skew(45deg); } }
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg); }
+  100% {
+    transform: rotate(360deg); } }
