@@ -152,6 +152,18 @@ body {
       justify-content: flex-end;
       padding: 1%;
       height: 140px; }
+    body .grilla {
+      grid-template-columns: 50% 50%;
+      grid-template-rows: 26.5vh 10vh 64.5vh 5vh; }
+      body .grilla .tituloLogros {
+        text-align: center;
+        padding-top: 25px;
+        grid-column-start: 1;
+        margin-left: 0; }
+      body .grilla .tablaInfo {
+        grid-column-start: 1;
+        width: 98%;
+        margin-left: 1%; }
     body .bloque__img {
       width: 100%;
       height: auto; }

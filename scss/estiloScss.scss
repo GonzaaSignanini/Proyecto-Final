@@ -255,6 +255,26 @@ body{
         height: 140px;
     }
 
+
+    .grilla{
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 26.5vh 10vh 64.5vh 5vh;
+
+        .tituloLogros{
+            text-align: center;
+            padding-top: 25px;
+            grid-column-start: 1;
+            margin-left: 0;
+        }
+
+        .tablaInfo{
+            grid-column-start: 1;
+            width: 98%;
+            margin-left: 1%;
+        }
+    }
+
+
     .bloque{
         &__img{
             width: 100%;
