@@ -152,10 +152,11 @@ body {
       justify-content: flex-end;
       padding: 1%;
       height: 140px; }
-    body .bloque, body .newells {
-      width: 100%; }
-      body .bloque__video {
-        width: 90%; }
+    body .bloque__img {
+      width: 100%;
+      height: auto; }
+    body .bloque__video {
+      width: 90%; }
     body .contenido__texto {
       font-size: 20px;
       width: 96%;
