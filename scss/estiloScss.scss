@@ -258,7 +258,7 @@ body{
 
     .grilla{
         grid-template-columns: 50% 50%;
-        grid-template-rows: 26.5vh 10vh 64.5vh 5vh;
+        grid-template-rows: 26.5vh 10vh auto 5vh;
 
         .tituloLogros{
             text-align: center;
@@ -269,7 +269,7 @@ body{
 
         .tablaInfo{
             grid-column-start: 1;
-            width: 98%;
+            width: 97%;
             margin-left: 1%;
         }
     }
@@ -373,6 +373,40 @@ body{
 
     }
 
+
+    @media only screen and (min-width:768px) {
+        
+        .grilla{
+            grid-template-rows: auto 14vh 52.2vh 5vh;
+
+            .tituloLogros{
+                grid-column-start: 1;
+                text-align: center;
+                margin-left: 0;
+            }
+
+            .tablaInfo{
+                padding: 90px;
+                margin-top: -90px;
+            }
+        }
+    }
+
+
+
+    @media only screen and (min-width:768px){
+
+        .grilla{
+            grid-template-rows: auto 15vh 58.6vh 7vh;
+
+            .tablaInfo{
+                margin-top: 0;
+                margin-left: 40px;
+            }
+        }
+
+    }    
+
     @media only screen and (max-width:1200px){
 
         li{
@@ -382,7 +416,16 @@ body{
     }
 
     @media only screen and (min-width:1200px){
+    
+    .grilla{
+        grid-template-columns: 25% 45% 30%;
+        grid-template-rows: 33.8vh 14vh 42.2vh 10vh;
 
+        .tablaInfo{
+            margin-left: 0;
+            padding: 0;
+        }
+    }
     .contenido__texto{
         font-size: 26px;
         font-family: 'Source Serif Pro';
