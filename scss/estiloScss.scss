@@ -377,7 +377,7 @@ body{
     @media only screen and (min-width:768px) {
         
         .grilla{
-            grid-template-rows: auto 14vh 52.2vh 5vh;
+            grid-template-rows: auto 14vh 52.2vh 8.8vh;
 
             .tituloLogros{
                 grid-column-start: 1;
@@ -388,20 +388,23 @@ body{
             .tablaInfo{
                 padding: 90px;
                 margin-top: -90px;
+                grid-area: tabla;
+                grid-column-start: 1;
             }
         }
     }
 
 
 
-    @media only screen and (min-width:768px){
+    @media only screen and (min-width:1024px){
 
         .grilla{
             grid-template-rows: auto 15vh 58.6vh 7vh;
 
             .tablaInfo{
                 margin-top: 0;
-                margin-left: 40px;
+                grid-column-start: 2;
+                margin-left: -140px;
             }
         }
 

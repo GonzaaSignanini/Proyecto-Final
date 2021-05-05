@@ -224,20 +224,23 @@ body {
       background-size: 100vw 31vh; } }
   @media only screen and (min-width: 768px) {
     body .grilla {
-      grid-template-rows: auto 14vh 52.2vh 5vh; }
+      grid-template-rows: auto 14vh 52.2vh 8.8vh; }
       body .grilla .tituloLogros {
         grid-column-start: 1;
         text-align: center;
         margin-left: 0; }
       body .grilla .tablaInfo {
         padding: 90px;
-        margin-top: -90px; } }
-  @media only screen and (min-width: 768px) {
+        margin-top: -90px;
+        grid-area: tabla;
+        grid-column-start: 1; } }
+  @media only screen and (min-width: 1024px) {
     body .grilla {
       grid-template-rows: auto 15vh 58.6vh 7vh; }
       body .grilla .tablaInfo {
         margin-top: 0;
-        margin-left: 40px; } }
+        grid-column-start: 2;
+        margin-left: -140px; } }
   @media only screen and (max-width: 1200px) {
     body li {
       font-size: 20px; } }
