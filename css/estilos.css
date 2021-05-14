@@ -2,18 +2,27 @@
 header {
   grid-area: header;
   background-image: url(../Imagenes/banner2.jpg);
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat; }
+  header .nav-link {
+    color: #e0dede !important; }
+  header .nav-link:hover {
+    color: #7a7878 !important; }
   header .lista__item {
     list-style-type: none; }
   header .lista__subitem {
-    font-family: 'Times New Roman', Times, serif;
-    text-decoration: none; }
+    font-family: 'Domine';
+    text-decoration: none;
+    font-size: 16px; }
+  header .navbar {
+    margin-top: 20px;
+    background-color: #000;
+    border-top: 0.1px solid #4d4b4b; }
 
 /*BODY*/
 body {
   margin: 0;
-  background-image: linear-gradient(60deg, red 26%, black 50%);
+  background-color: white;
   height: 100%;
   width: 100%;
   overflow-x: hidden;
@@ -27,26 +36,70 @@ body {
   body h1 {
     font-family: 'Playfair Display';
     font-size: 40px;
-    color: #fc3142;
-    animation-name: estiloTitulo;
-    animation-duration: 1.7s;
-    animation-iteration-count: 2; }
+    color: black; }
   body p {
-    color: #d8d4d4;
-    text-align: justify;
-    margin: 1%; }
+    text-align: justify; }
   body td {
-    border: 1px solid #a13838; }
+    border: 1px solid black; }
   body form {
     border: 2px red solid;
+    background-color: #eae9e9;
     border-radius: 2%;
     padding: 10px;
     text-align: justify; }
     body form label {
-      color: cornsilk;
+      color: black;
       text-align: start;
       font-size: 18px;
       font-style: italic; }
+  body a {
+    text-decoration: none; }
+  body .logo img {
+    overflow: hidden; }
+  body .sponsorContainer strong {
+    color: #e20f34; }
+  body .row {
+    margin-right: -15px;
+    margin-left: -15px;
+    height: 300px; }
+  body .cienH {
+    display: flex;
+    justify-content: center; }
+  body .titpubli {
+    margin-top: 4rem;
+    text-align: center; }
+  body .logopubli .titpubli {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+  body .logopubli {
+    width: 300px;
+    height: 50px;
+    padding-top: 60px; }
+  body .logopubli img {
+    height: 37px; }
+  body .logoSponsorsOficialesContainer {
+    padding-top: 20px;
+    width: 300px;
+    height: 50px; }
+  body .logoSponsorsOficialesContainer img {
+    height: 37px; }
+  body .sponsors {
+    margin-top: 50px;
+    margin-bottom: -40px;
+    height: auto; }
+  body .txtblanco h4 {
+    color: #fff;
+    text-align: center;
+    font-weight: 400;
+    font-size: 1.5rem; }
+  body .bgrojo {
+    background-color: #ed1c24 !important; }
+  body .bgnegro {
+    background-color: #161515; }
+  body .bggris {
+    background-color: #dddcdc; }
   body .formContacto {
     display: flex;
     justify-content: center;
@@ -57,25 +110,43 @@ body {
       padding-left: 8px;
       height: 465px;
       width: 400px; }
+  body .textoFlex {
+    display: inline-flex;
+    justify-content: space-evenly;
+    margin-top: 5%; }
+  body .carousel-inner img {
+    height: 800px;
+    width: 1900px; }
+  body #carouselExampleControls {
+    width: 80%;
+    margin-left: 10%;
+    margin-top: 5%; }
   body .contenido__titulo {
     text-align: center;
     font-family: 'Playfair Display';
     font-weight: 600;
-    padding-top: 30px; }
+    padding-top: 30px;
+    color: black; }
   body .contenido__subtitulo {
     font-family: 'Playfair Display';
     font-size: 27px;
-    color: burlywood;
-    text-align: justify;
+    color: black;
+    text-align: center;
     text-decoration: underline;
     margin-top: 3%;
     font-weight: 400; }
   body .contenido__texto {
-    font-size: 24px;
+    font-size: 26px;
     font-family: 'Source Serif Pro';
     line-height: 1.3;
-    color: white;
-    width: 10%; }
+    width: 42%;
+    color: gray; }
+  body .contenido__textoDos {
+    font-size: 26px;
+    font-family: 'Source Serif Pro';
+    line-height: 1.2;
+    color: gray;
+    width: 45%; }
   body .boton {
     width: 100%;
     text-align: end;
@@ -114,11 +185,11 @@ body {
       align-items: center;
       grid-column-start: 2; }
     body .grilla .tabla__head {
-      color: #c5bfbf;
+      color: #070707;
       text-decoration: underline;
       font-style: italic; }
     body .grilla .tabla__datos {
-      color: #f0e6e6; }
+      color: #fd3131; }
   body .newells {
     padding-top: 10px; }
     body .newells__img {
@@ -126,20 +197,27 @@ body {
       padding: 5px; }
   body .footer {
     display: flex;
-    align-items: baseline;
-    justify-content: center; }
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
     body .footer__texto {
-      color: white; }
+      color: white;
+      font-size: 17px; }
     body .footer__item {
       font-size: 25px;
       color: white; }
     body .footer i {
       padding: 10px; }
+    body .footer i:hover {
+      color: #b1b1ae; }
+    body .footer__texto:hover {
+      color: #b1b1ae; }
   body footer {
     grid-area: footer;
     background-color: black;
     margin-top: 40px;
-    height: 60px; }
+    height: auto;
+    padding-top: 18px; }
     body footer .footerGeneral {
       color: white;
       text-align: center;
@@ -154,7 +232,7 @@ body {
       height: 140px; }
     body .grilla {
       grid-template-columns: 50% 50%;
-      grid-template-rows: 26.5vh 10vh auto 5vh; }
+      grid-template-rows: 26.5vh 10vh auto auto; }
       body .grilla .tituloLogros {
         text-align: center;
         padding-top: 25px;
@@ -164,6 +242,8 @@ body {
         grid-column-start: 1;
         width: 97%;
         margin-left: 1%; }
+    body .textoFlex {
+      display: block; }
     body .bloque__img {
       width: 100%;
       height: auto; }
@@ -171,13 +251,16 @@ body {
       width: 90%; }
     body .contenido__texto {
       font-size: 20px;
-      width: 96%;
-      margin: 1%;
-      font-family: Helvetica, sans-serif; }
+      width: 80%;
+      color: gray;
+      margin-left: 10%; }
+    body .contenido__textoDos {
+      font-size: 20px;
+      width: 80%;
+      margin-left: 10%; }
     body .contenido__titulo {
       text-align: center;
-      font-size: 35px;
-      margin-top: -10px; }
+      font-size: 50px; }
     body .footer {
       text-align: center; }
     body .formContacto {
@@ -189,31 +272,41 @@ body {
         width: 100%; }
       body .formContacto label {
         font-size: 17px; }
-    body h3 {
+    body .contenido__subtitulo {
       font-style: italic;
-      font-family: serif;
-      color: burlywood;
-      margin: 5px;
-      font-size: 14px; }
+      text-align: center;
+      font-size: 30px; }
     body header {
-      background-size: 420px 140px; } }
+      background-size: 100% 160px; }
+    body .carousel-inner img {
+      height: 300px;
+      width: 1900px; } }
   @media only screen and (min-width: 600px) {
-    body .contenido__titulo {
-      font-size: 34px; }
+    body .grilla {
+      grid-template-columns: 50% 50%;
+      grid-template-rows: auto 10vh auto auto; }
+      body .grilla .tituloLogros {
+        text-align: center;
+        padding-top: 25px;
+        grid-column-start: 1;
+        margin-left: 0; }
+      body .grilla .tablaInfo {
+        grid-column-start: 1;
+        width: 97%;
+        margin-left: 1%; }
     body .navbar-nav {
       justify-content: space-around;
       width: 100%; }
-    body .contenido__texto {
-      width: 96%; }
     body .contenido__subtitulo {
-      color: burlywood;
       font-family: 'Times New Roman', Times, serif;
       font-size: 25px;
-      font-weight: 400;
-      margin-left: 1%; }
+      font-weight: 400; }
     body .contenido__titulo {
       text-align: center;
       font-size: 40px; }
+    body .carousel-inner img {
+      height: 500px;
+      width: 1900px; }
     body .logo {
       display: flex;
       justify-content: flex-end;
@@ -221,10 +314,10 @@ body {
       margin-right: 2%;
       height: 200px; }
     body header {
-      background-size: 100vw 31vh; } }
+      background-size: 110vw 31vh; } }
   @media only screen and (min-width: 768px) {
     body .grilla {
-      grid-template-rows: auto 14vh 52.2vh 8.8vh; }
+      grid-template-rows: auto 14vh 52.2vh auto; }
       body .grilla .tituloLogros {
         grid-column-start: 1;
         text-align: center;
@@ -233,50 +326,63 @@ body {
         padding: 90px;
         margin-top: -90px;
         grid-area: tabla;
-        grid-column-start: 1; } }
-  @media only screen and (min-width: 1024px) {
+        grid-column-start: 1; }
+    body .contenido__titulo {
+      font-size: 45px; }
+    body .contenido__subtitulo {
+      font-size: 30px; } }
+  @media only screen and (min-width: 1000px) {
     body .grilla {
-      grid-template-rows: auto 15vh 58.6vh 7vh; }
+      grid-template-columns: 25% 45% 30%;
+      grid-template-rows: auto 15vh 55.5vh auto; }
+      body .grilla .tituloLogros {
+        margin-top: 70px; }
       body .grilla .tablaInfo {
-        margin-top: 0;
+        grid-area: tabla;
+        align-items: center;
         grid-column-start: 2;
-        margin-left: -140px; } }
+        margin-top: 0;
+        padding: 0;
+        margin-left: -120px; }
+    body .contenido__titulo {
+      font-size: 46px; }
+    body .contenido__subtitulo {
+      font-size: 30px; } }
   @media only screen and (max-width: 1200px) {
     body li {
       font-size: 20px; } }
   @media only screen and (min-width: 1200px) {
     body .grilla {
       grid-template-columns: 25% 45% 30%;
-      grid-template-rows: 33.8vh 14vh 42.2vh 10vh; }
+      grid-template-rows: auto 15vh 49.8vh auto; }
+      body .grilla .tituloLogros {
+        margin-top: 10px; }
       body .grilla .tablaInfo {
-        margin-left: 0;
-        padding: 0; }
+        grid-area: tabla;
+        align-items: center;
+        grid-column-start: 2;
+        margin-left: 0; }
     body .contenido__texto {
       font-size: 26px;
       font-family: 'Source Serif Pro';
       line-height: 1.3;
-      color: white;
-      width: 97%; }
+      color: gray;
+      margin-right: 20px;
+      width: 42%; }
     body .footerGeneral {
       text-align: center; }
     body .contenido__titulo {
-      font-size: 40px; }
+      font-size: 55px; }
     body .logo {
       display: flex;
       justify-content: flex-end;
       padding: 0.4%; }
     body .contenido__subtitulo {
-      padding-top: 10px;
-      margin: 1%;
-      font-size: 27px; }
+      font-size: 35px;
+      text-align: center; }
     body header {
-      background-size: contain;
-      background-repeat: no-repeat; } }
-
-@keyframes estiloTitulo {
-  0% {
-    color: #fc3142;
-    transform: translateX(100px); }
-  100% {
-    color: black;
-    transform: skew(45deg); } }
+      background-size: cover;
+      background-repeat: no-repeat; }
+    body .carousel-inner img {
+      height: 768px;
+      width: 1900px; } }
