@@ -76,7 +76,7 @@ body{
     }
     
     form{
-        border: 2px red solid;
+        border: 2px black solid;
         background-color: #eae9e9;
         border-radius: 2%;
         padding: 10px;
@@ -245,6 +245,17 @@ body{
         text-align: end;
         margin-top: 7px;
         
+    }
+
+    .indumFlex{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        margin-top: 35px;
+    }
+
+    .imgDif img{
+        height: 372px;
     }
 
     .bloque{
@@ -472,6 +483,10 @@ body{
         width: 1900px;
     }
 
+    .sponsors{
+        height: 900px;
+    }
+
     }
  
     @media only screen and (min-width:600px){
@@ -527,6 +542,10 @@ body{
         background-size: 110vw 31vh;
     }
 
+    .sponsors{
+        height: 900px;
+    }
+
     }
 
 
@@ -555,6 +574,10 @@ body{
 
         .contenido__subtitulo{
             font-size: 30px;
+        }
+
+        .sponsors{
+            height: auto;
         }
     }
 
@@ -606,6 +629,7 @@ body{
 
         .tituloLogros{
             margin-top: 10px;
+            font-size: 55px;
         }
 
         .tablaInfo{
@@ -616,6 +640,14 @@ body{
         }
     }
 
+    .imagenes h1{
+        margin-bottom: 40px;
+    }
+
+    .tituloContacto h1{
+        font-size: 40px;
+    }
+
     .contenido__texto{
         font-size: 26px;
         font-family: 'Source Serif Pro';
@@ -623,6 +655,10 @@ body{
         color: gray;
         margin-right: 20px;
         width: 42%;
+    }
+    
+    .camRosa img{
+        height: 350px;
     }
 
     .footerGeneral{

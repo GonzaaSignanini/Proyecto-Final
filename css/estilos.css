@@ -42,7 +42,7 @@ body {
   body td {
     border: 1px solid black; }
   body form {
-    border: 2px red solid;
+    border: 2px black solid;
     background-color: #eae9e9;
     border-radius: 2%;
     padding: 10px;
@@ -151,6 +151,13 @@ body {
     width: 100%;
     text-align: end;
     margin-top: 7px; }
+  body .indumFlex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 35px; }
+  body .imgDif img {
+    height: 372px; }
   body .bloque, body .newells {
     display: flex;
     flex-wrap: wrap;
@@ -280,7 +287,9 @@ body {
       background-size: 100% 160px; }
     body .carousel-inner img {
       height: 300px;
-      width: 1900px; } }
+      width: 1900px; }
+    body .sponsors {
+      height: 900px; } }
   @media only screen and (min-width: 600px) {
     body .grilla {
       grid-template-columns: 50% 50%;
@@ -314,7 +323,9 @@ body {
       margin-right: 2%;
       height: 200px; }
     body header {
-      background-size: 110vw 31vh; } }
+      background-size: 110vw 31vh; }
+    body .sponsors {
+      height: 900px; } }
   @media only screen and (min-width: 768px) {
     body .grilla {
       grid-template-rows: auto 14vh 52.2vh auto; }
@@ -330,7 +341,9 @@ body {
     body .contenido__titulo {
       font-size: 45px; }
     body .contenido__subtitulo {
-      font-size: 30px; } }
+      font-size: 30px; }
+    body .sponsors {
+      height: auto; } }
   @media only screen and (min-width: 1000px) {
     body .grilla {
       grid-template-columns: 25% 45% 30%;
@@ -356,12 +369,17 @@ body {
       grid-template-columns: 25% 45% 30%;
       grid-template-rows: auto 15vh 49.8vh auto; }
       body .grilla .tituloLogros {
-        margin-top: 10px; }
+        margin-top: 10px;
+        font-size: 55px; }
       body .grilla .tablaInfo {
         grid-area: tabla;
         align-items: center;
         grid-column-start: 2;
         margin-left: 0; }
+    body .imagenes h1 {
+      margin-bottom: 40px; }
+    body .tituloContacto h1 {
+      font-size: 40px; }
     body .contenido__texto {
       font-size: 26px;
       font-family: 'Source Serif Pro';
@@ -369,6 +387,8 @@ body {
       color: gray;
       margin-right: 20px;
       width: 42%; }
+    body .camRosa img {
+      height: 350px; }
     body .footerGeneral {
       text-align: center; }
     body .contenido__titulo {
