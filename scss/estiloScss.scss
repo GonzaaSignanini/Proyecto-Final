@@ -179,7 +179,6 @@ body{
         padding-top: 40px;
         &__mapa{
             border-radius: 5%;
-            padding-left: 8px;
             height: 465px;
             width: 400px;
         }
@@ -252,6 +251,7 @@ body{
         flex-wrap: wrap;
         justify-content: space-evenly;
         margin-top: 35px;
+        gap: 10px;
     }
 
     .imgDif img{
@@ -400,7 +400,7 @@ body{
 
     .grilla{
         grid-template-columns: 50% 50%;
-        grid-template-rows: 26.5vh 10vh auto auto;
+        grid-template-rows: auto 10vh auto auto;
 
         .tituloLogros{
             text-align: center;
@@ -548,6 +548,11 @@ body{
 
     }
 
+    @media only screen and (max-width:480px){
+        .card img{
+            height: auto;
+        }
+    }
 
     @media only screen and (min-width:768px) {
         
@@ -623,10 +628,10 @@ body{
 
     @media only screen and (min-width:1200px){
     
-    .grilla{
-        grid-template-columns: 25% 45% 30%;
-        grid-template-rows: auto 15vh 49.8vh auto;
-
+        .grilla{
+            grid-template-columns: 25% 45% 30%;
+            grid-template-rows: auto 15vh 49.8vh auto;
+        }
         .tituloLogros{
             margin-top: 10px;
             font-size: 55px;
@@ -638,57 +643,57 @@ body{
             grid-column-start: 2;
             margin-left: 0;
         }
-    }
-
-    .imagenes h1{
-        margin-bottom: 40px;
-    }
-
-    .tituloContacto h1{
-        font-size: 40px;
-    }
-
-    .contenido__texto{
-        font-size: 26px;
-        font-family: 'Source Serif Pro';
-        line-height: 1.3;
-        color: gray;
-        margin-right: 20px;
-        width: 42%;
-    }
     
-    .camRosa img{
-        height: 350px;
-    }
 
-    .footerGeneral{
-        text-align: center;
-    }
+        .imagenes h1{
+            margin-bottom: 40px;
+        }
 
-    .contenido__titulo{
-        font-size: 55px;
-    }
+        .tituloContacto h1{
+            font-size: 40px;
+        }
 
-    .logo{
-        display: flex;
-        justify-content: flex-end;
-        padding: 0.4%;
-    }
+        .contenido__texto{
+            font-size: 26px;
+            font-family: 'Source Serif Pro';
+            line-height: 1.3;
+            color: gray;
+            margin-right: 20px;
+            width: 42%;
+        }
+        
+        .camRosa img{
+            height: 350px;
+        }
 
-    .contenido__subtitulo{
-        font-size: 35px;
-        text-align: center;
-    }
+        .footerGeneral{
+            text-align: center;
+        }
 
-    header{
-        background-size: cover;
-        background-repeat: no-repeat;
-    }
+        .contenido__titulo{
+            font-size: 55px;
+        }
 
-    .carousel-inner img{
-        height: 768px;
-        width: 1900px;
-    }
-    }
+        .logo{
+            display: flex;
+            justify-content: flex-end;
+            padding: 0.4%;
+        }
+
+        .contenido__subtitulo{
+            font-size: 35px;
+            text-align: center;
+        }
+
+        header{
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+
+        .carousel-inner img{
+            height: 768px;
+            width: 1900px;
+        }
+     }
 
 }
