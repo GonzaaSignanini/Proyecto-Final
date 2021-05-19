@@ -157,7 +157,7 @@ body {
     flex-wrap: wrap;
     justify-content: space-evenly;
     margin-top: 35px;
-    gap: 10px; }
+    gap: 0.625rem; }
   body .imgDif img {
     height: 22rem; }
   body .bloque, body .newells {
@@ -334,9 +334,7 @@ body {
       height: 900px; } }
   @media only screen and (max-width: 480px) {
     body .card img {
-      height: 15rem; }
-    body .indumFlex {
-      gap: 0.625rem; } }
+      height: 15rem; } }
   @media only screen and (min-width: 768px) {
     body .grilla {
       grid-template-rows: auto 14vh 52.2vh auto; }

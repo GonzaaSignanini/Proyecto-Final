@@ -253,7 +253,7 @@ body{
         flex-wrap: wrap;
         justify-content: space-evenly;
         margin-top: 35px;
-        gap: 10px;
+        gap: 0.625rem;
     }
 
     .imgDif img{
@@ -561,10 +561,6 @@ body{
     @media only screen and (max-width:480px){
         .card img{
             height: 15rem;
-        }
-
-        .indumFlex{
-            gap: 0.625rem;
         }
     }
 
