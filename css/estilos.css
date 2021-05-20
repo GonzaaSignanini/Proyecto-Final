@@ -180,8 +180,8 @@ body {
       border-radius: 5%; }
   body .grilla {
     display: grid;
-    grid-template-columns: 25% 45% 30%;
-    grid-template-rows: 33.8vh 14vh 42.2vh 10vh;
+    grid-template-columns: 25% 50% 30%;
+    grid-template-rows: 33.8vh 14vh auto 10vh;
     grid-template-areas: "header header header" "titulo titulo titulo" "tabla tabla tabla"                      "footer footer footer"; }
     body .grilla .tituloLogros {
       font-weight: 600;
@@ -189,16 +189,42 @@ body {
       grid-column-start: 2;
       margin-left: 230px;
       padding-top: 40px; }
+    body .grilla .trofeos .card {
+      width: 10rem !important;
+      align-items: center;
+      margin-top: 5px;
+      border: none; }
+    body .grilla .tablaInfo .card img {
+      height: 150px;
+      width: 83.5px; }
+    body .grilla .tablaInfo .trofeoDif img {
+      height: 150px;
+      width: 105px; }
     body .grilla .tablaInfo {
       grid-area: tabla;
-      align-items: center;
-      grid-column-start: 2; }
-    body .grilla .tabla__head {
-      color: #070707;
-      text-decoration: underline;
-      font-style: italic; }
-    body .grilla .tabla__datos {
-      color: #fd3131; }
+      grid-column-start: 1;
+      margin-top: 30px; }
+      body .grilla .tablaInfo .trofeos {
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        gap: 20px; }
+        body .grilla .tablaInfo .trofeos .text-modif {
+          padding-bottom: 0;
+          padding-top: 22px; }
+          body .grilla .tablaInfo .trofeos .text-modif .card-text {
+            text-align: center; }
+        body .grilla .tablaInfo .trofeos .trofeoDif {
+          margin-top: 10px; }
+        body .grilla .tablaInfo .trofeos .text-modf {
+          padding-left: 0;
+          padding-right: 0;
+          padding-bottom: 0;
+          padding-top: 27px; }
+          body .grilla .tablaInfo .trofeos .text-modf--modificador {
+            padding-top: 22px; }
+          body .grilla .tablaInfo .trofeos .text-modf .card-text {
+            text-align: center; }
   body .newells {
     padding-top: 10px; }
     body .newells__img {
@@ -249,10 +275,13 @@ body {
         padding-top: 25px;
         grid-column-start: 1;
         margin-left: 0; }
+      body .grilla .trofeos {
+        flex-direction: column;
+        justify-content: center; }
       body .grilla .tablaInfo {
         grid-column-start: 1;
-        width: 97%;
-        margin-left: 1%; }
+        justify-content: center;
+        margin-left: 31%; }
     body .textoFlex {
       display: block; }
     body .bloque__img {
@@ -298,17 +327,13 @@ body {
       height: 900px; } }
   @media only screen and (min-width: 600px) {
     body .grilla {
-      grid-template-columns: 50% 50%;
+      grid-template-columns: 25% 35% 40%;
       grid-template-rows: auto 10vh auto auto; }
       body .grilla .tituloLogros {
         text-align: center;
         padding-top: 25px;
         grid-column-start: 1;
         margin-left: 0; }
-      body .grilla .tablaInfo {
-        grid-column-start: 1;
-        width: 97%;
-        margin-left: 1%; }
     body .navbar-nav {
       justify-content: space-around;
       width: 100%; }
@@ -334,19 +359,20 @@ body {
       height: 900px; } }
   @media only screen and (max-width: 480px) {
     body .card img {
-      height: 15rem; } }
+      height: 15rem; }
+    body .trofeoDif img {
+      height: 9.375rem;
+      width: 5.218rem; }
+    body .trofeoDif img {
+      height: 9.375rem;
+      width: 6.5625rem; } }
   @media only screen and (min-width: 768px) {
     body .grilla {
-      grid-template-rows: auto 14vh 52.2vh auto; }
+      grid-template-rows: auto 14vh auto auto; }
       body .grilla .tituloLogros {
         grid-column-start: 1;
         text-align: center;
         margin-left: 0; }
-      body .grilla .tablaInfo {
-        padding: 90px;
-        margin-top: -90px;
-        grid-area: tabla;
-        grid-column-start: 1; }
     body .contenido__titulo {
       font-size: 45px; }
     body .contenido__subtitulo {
@@ -356,17 +382,10 @@ body {
   @media only screen and (min-width: 1000px) {
     body .grilla {
       grid-template-columns: 25% 45% 30%;
-      grid-template-rows: auto 15vh 55.5vh auto; }
+      grid-template-rows: auto auto auto auto; }
       body .grilla .tituloLogros {
         margin-top: 70px;
         font-size: 55px; }
-      body .grilla .tablaInfo {
-        grid-area: tabla;
-        align-items: center;
-        grid-column-start: 2;
-        margin-top: 0;
-        padding: 0;
-        margin-left: -120px; }
     body .contenido__titulo {
       font-size: 46px; }
     body .contenido__subtitulo {
@@ -377,15 +396,10 @@ body {
   @media only screen and (min-width: 1200px) {
     body .grilla {
       grid-template-columns: 25% 45% 30%;
-      grid-template-rows: auto 15vh 49.8vh auto; }
+      grid-template-rows: auto auto auto auto; }
       body .grilla .tituloLogros {
         margin-top: 10px;
         font-size: 55px; }
-      body .grilla .tablaInfo {
-        grid-area: tabla;
-        align-items: center;
-        grid-column-start: 2;
-        margin-left: 0; }
     body .imagenes h1 {
       margin-bottom: 40px; }
     body .tituloContacto h1 {
