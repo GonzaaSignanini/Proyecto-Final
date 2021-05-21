@@ -439,7 +439,7 @@ body{
         display: flex;
         justify-content: flex-end;
         padding: 1%;
-        height: 140px;
+        height: 8.75rem;
     }
 
     .formContacto{
@@ -462,13 +462,11 @@ body{
 
         .trofeos{
             flex-direction: column;
-            justify-content: center;
+            align-items: center;
         }
 
         .tablaInfo{
             grid-column-start: 1;
-            justify-content: center;
-            margin-left: 31%;
         }
 
     }
@@ -534,7 +532,7 @@ body{
     }
 
     header{
-        background-size: 100% 160px;
+        background-size: 100% 10rem;
     }
 
     .carousel-inner img{
