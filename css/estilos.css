@@ -15,7 +15,6 @@ header {
     text-decoration: none;
     font-size: 16px; }
   header .navbar {
-    margin-top: 20px;
     background-color: #000;
     border-top: 0.1px solid #4d4b4b; }
 
@@ -122,6 +121,8 @@ body {
     width: 80%;
     margin-left: 10%;
     margin-top: 5%; }
+  body .titPlantel {
+    margin-bottom: 4%; }
   body .contenido__titulo {
     text-align: center;
     font-family: 'Playfair Display';
@@ -163,7 +164,8 @@ body {
   body .bloque, body .newells {
     display: flex;
     flex-wrap: wrap;
-    justify-content: center; }
+    justify-content: center;
+    margin-top: 3%; }
     body .bloque__titulo {
       text-align: center;
       font-family: 'Times New Roman', Times, serif;
@@ -177,7 +179,16 @@ body {
       border-radius: 1%; }
     body .bloque__video {
       margin-top: 10px;
-      border-radius: 5%; }
+      padding: 5px;
+      width: 85%;
+      height: 85vh; }
+  body .videosNewells {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+  body .videosNewells h1 {
+    width: 100%;
+    margin-top: 3%; }
   body .grilla {
     display: grid;
     grid-template-columns: 25% 50% 30%;
@@ -267,6 +278,8 @@ body {
       height: 8.75rem; }
     body .formContacto__mapa {
       margin-left: 0; }
+    body .titPlantel h1 {
+      font-size: 39px; }
     body .grilla {
       grid-template-columns: 25% 35% 40%;
       grid-template-rows: auto 10vh auto auto; }
@@ -286,8 +299,8 @@ body {
       width: 100%;
       height: auto; }
     body .bloque__video {
-      max-width: 100%;
-      height: 200px;
+      width: 100%;
+      height: 300px;
       border-radius: 0; }
     body .contenido__texto {
       font-size: 20px;
@@ -363,7 +376,11 @@ body {
       width: 5.218rem; }
     body .trofeoDif img {
       height: 9.375rem;
-      width: 6.5625rem; } }
+      width: 6.5625rem; }
+    body .bloque__video {
+      width: 100%;
+      height: 200px;
+      border-radius: 0; } }
   @media only screen and (min-width: 768px) {
     body .grilla {
       grid-template-rows: auto 14vh auto auto; }
@@ -372,11 +389,14 @@ body {
         text-align: center;
         margin-left: 0; }
     body .contenido__titulo {
-      font-size: 45px; }
+      font-size: 40px; }
     body .contenido__subtitulo {
       font-size: 30px; }
     body .sponsors {
-      height: auto; } }
+      height: auto; }
+    body .bloque__video {
+      width: 85%;
+      height: 400px; } }
   @media only screen and (min-width: 1000px) {
     body .grilla {
       grid-template-columns: 25% 45% 30%;
@@ -385,9 +405,15 @@ body {
         margin-top: 70px;
         font-size: 55px; }
     body .contenido__titulo {
-      font-size: 46px; }
+      font-size: 55px; }
     body .contenido__subtitulo {
-      font-size: 30px; } }
+      font-size: 30px; }
+    body .bloque img, body .newells img {
+      height: auto;
+      width: 90%; }
+    body .bloque__video {
+      width: 90%;
+      height: 550px; } }
   @media only screen and (max-width: 1200px) {
     body li {
       font-size: 20px; } }
@@ -422,6 +448,12 @@ body {
     body .contenido__subtitulo {
       font-size: 35px;
       text-align: center; }
+    body .bloque__video {
+      width: 1280px;
+      height: 85vh; }
+    body .bloque img, body .newells img {
+      width: 640px;
+      height: 427px; }
     body header {
       background-size: cover;
       background-repeat: no-repeat; }

@@ -33,7 +33,6 @@ header{
         }
 
         .navbar{
-            margin-top: 20px;
             background-color: #000;
             border-top: 0.1px solid rgb(77, 75, 75);
         }
@@ -203,6 +202,10 @@ body{
         margin-top: 5%;
     }
 
+    .titPlantel{
+        margin-bottom: 4%;
+    }
+
     .contenido{
             
         &__titulo{
@@ -264,6 +267,7 @@ body{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        margin-top: 3%;
 
         &__titulo{
             text-align: center;
@@ -283,8 +287,21 @@ body{
 
         &__video{
             margin-top: 10px;
-            border-radius: 5% ;
+            padding: 5px;
+            width: 85%;
+            height: 85vh;
         }
+    }
+
+    .videosNewells{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .videosNewells h1{
+        width: 100%;
+        margin-top: 3%;
     }
         
     .grilla{
@@ -449,6 +466,10 @@ body{
         }
     }
 
+    .titPlantel h1{
+        font-size: 39px;
+    }
+
     .grilla{
         grid-template-columns: 25% 35% 40%;
         grid-template-rows: auto 10vh auto auto;
@@ -482,8 +503,8 @@ body{
         }
 
         &__video{
-            max-width: 100%;
-            height: 200px;
+            width: 100%;
+            height: 300px;
             border-radius: 0;
         }
     }
@@ -614,6 +635,15 @@ body{
             height: 9.375rem;
             width: 6.5625rem;
         }
+
+        .bloque{
+    
+            &__video{
+                width: 100%;
+                height: 200px;
+                border-radius: 0;
+            }
+        }
     }
 
     @media only screen and (min-width:768px) {
@@ -629,7 +659,7 @@ body{
         }
 
         .contenido__titulo{
-            font-size: 45px;
+            font-size: 40px;
         }
 
         .contenido__subtitulo{
@@ -638,6 +668,14 @@ body{
 
         .sponsors{
             height: auto;
+        }
+
+        .bloque{
+
+            &__video{
+                width: 85%;
+                height: 400px;
+            }
         }
     }
 
@@ -655,12 +693,27 @@ body{
         }
 
         .contenido__titulo{
-            font-size: 46px;
+            font-size: 55px;
         }
 
         .contenido__subtitulo{
             font-size: 30px;
         }
+
+        .bloque{
+
+            img{
+                height: auto;
+                width: 90%;
+            }
+
+            &__video{
+                width: 90%;
+                height: 550px;
+            }
+        }
+
+        
     }
 
     
@@ -671,6 +724,7 @@ body{
             font-size: 20px;
         }
 
+        
     }
 
     @media only screen and (min-width:1200px){
@@ -722,6 +776,18 @@ body{
         .contenido__subtitulo{
             font-size: 35px;
             text-align: center;
+        }
+        .bloque{
+
+            &__video{
+                width: 1280px;
+                height: 85vh;
+            }
+
+            img{
+                width: 640px;
+                height: 427px;
+            }
         }
 
         header{
