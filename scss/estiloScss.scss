@@ -194,6 +194,7 @@ body{
     .carousel-inner img{
         height: 800px;
         width: 1900px;
+        object-fit: cover;
     }
 
     #carouselExampleControls{

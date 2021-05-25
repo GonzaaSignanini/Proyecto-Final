@@ -116,7 +116,8 @@ body {
     margin-top: 5%; }
   body .carousel-inner img {
     height: 800px;
-    width: 1900px; }
+    width: 1900px;
+    object-fit: cover; }
   body #carouselExampleControls {
     width: 80%;
     margin-left: 10%;
