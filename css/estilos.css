@@ -1,7 +1,7 @@
 /*HEADER*/
 header {
   grid-area: header;
-  background-image: url(../Imagenes/banner2.jpg);
+  background-image: url(../imgs/Imagenes/banner2.jpg);
   background-size: cover;
   background-repeat: no-repeat; }
   header .nav-link {
@@ -76,13 +76,17 @@ body {
     height: 50px;
     padding-top: 60px; }
   body .logopubli img {
-    height: 37px; }
+    width: 277px;
+    height: 50px; }
   body .logoSponsorsOficialesContainer {
-    padding-top: 20px;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: 120px;
+    align-items: center; }
+  body .logoSponsorsOficialesContainer img {
     width: 300px;
     height: 50px; }
-  body .logoSponsorsOficialesContainer img {
-    height: 37px; }
   body .sponsors {
     margin-top: 50px;
     margin-bottom: -40px;
@@ -192,7 +196,10 @@ body {
     display: grid;
     grid-template-columns: 25% 50% 30%;
     grid-template-rows: 33.8vh 14vh auto 10vh;
-    grid-template-areas: "header header header" "titulo titulo titulo" "tabla tabla tabla"                      "footer footer footer"; }
+    grid-template-areas: "header header header"
+ "titulo titulo titulo"
+ "tabla tabla tabla"                     
+ "footer footer footer"; }
     body .grilla .tituloLogros {
       font-weight: 600;
       grid-area: titulo;
